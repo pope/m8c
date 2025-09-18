@@ -7,7 +7,7 @@
 #include "render.h"
 #include <assert.h>
 
-#define ArrayCount(x) sizeof(x) / sizeof((x)[1])
+#define ArrayCount(x) (sizeof(x) / sizeof((x)[1]))
 
 // Convert 2 little-endian 8bit bytes to a 16bit integer
 static uint16_t decodeInt16(const uint8_t *data, const uint8_t start) {
